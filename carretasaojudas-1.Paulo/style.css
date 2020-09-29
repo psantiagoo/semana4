@@ -1,0 +1,73 @@
+.card-img-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  .card-img-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.3);
+    opacity: 0;
+    transition: opacity .25s;
+  }
+  .card-img-wrap img {
+    transition: transform .25s;
+    width: 100%;
+  }
+  .card-img-wrap:hover img {
+    transform: scale(1.8);
+  }
+  .card-img-wrap:hover:after {
+    opacity: 1;
+  }
+
+.card-body {
+    height: 180px;
+}
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ 
+
+.linknavbar {
+    color: black;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+.txtslider {
+    font-size: 50px;
+    font-family: monospace;
+
+}
+
+#background {
+  background-image: url('imagens/fund.png'); 
+  font-family: 'Sulphur Point', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 500px) {
+
+    .navbar-nav {
+      margin-top: -13px;
+      margin-bottom: -26px;
+    }
+
+    #logofinal{
+        margin-top: -410px;
+    }
+}
+
+.equipe, .curso{
+  height: 200px; 
+  width: 220px;
+}
